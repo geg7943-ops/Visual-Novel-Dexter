@@ -1,0 +1,54 @@
+# Файл истории (диалоги) для Visual Novel.
+#
+# Здесь ты описываешь сцены и реплики по шагам.
+#
+# Основные поля:
+# - scenes: список сцен
+#   - id: короткий идентификатор сцены (латиница/цифры)
+#   - name: название сцены (для людей)
+#   - background: путь к фону (опционально)
+#   - dialogues: список реплик
+#       - speaker: кто говорит
+#       - text: что говорит
+#       - sprite: путь к изображению персонажа (опционально)
+
+scenes:
+  - id: intro
+    name: "Вступление"
+    background: "Bg_assets/bg1.png"
+    dialogues:
+      - speaker: "ДЕКСТЕР МОРГАН"
+        text: "Сержант, я просто делаю свою работу..."
+        sprite: "game_assets/dexter_1.png"
+
+      - speaker: "ДЕКСТЕР МОРГАН"
+        text: "Анализирую улики, собираю данные. Это то, чем я занимаюсь."
+        sprite: "game_assets/dexter_1.png"
+
+      - speaker: "ЛАГЕРТА"
+        text: "Морган, ты вещь. Просто следи за собой."
+        sprite: "game_assets/lagerta.png"
+
+  - id: night
+    name: "Ночь"
+    background: "game_assets/apartment_bg.png"
+    dialogues:
+      - speaker: "ДЕКСТЕР МОРГАН"
+        text: "Ночью я становлюсь тем, кто я на самом деле..."
+        sprite: "game_assets/dexter_2.png"
+
+      - speaker: "ДЕКСТЕР МОРГАН"
+        text: "Охотник в городе охотников. Ночной призрак Miami Metro."
+        sprite: "game_assets/dexter_2.png"
+
+  - id: end
+    name: "Финал"
+    background: "game_assets/sunset.png"
+    dialogues:
+      - speaker: "ДЕКСТЕР МОРГАН"
+        text: "И все же... есть что-то человеческое, что остается."
+        sprite: "game_assets/dexter_1.png"
+
+      - speaker: "ДЕКСТЕР МОРГАН"
+        text: "Спасибо за внимание."
+        sprite: "game_assets/dexter_1.png"
